@@ -15,6 +15,7 @@ This is mainly jquery and vanilla js. with some html and css minipulation.
 ## Inspirations and Resources
 
 I worked with Michael Ruiz on part of the project.
+His Github is : https://github.com/Frostquill
 
 ## Live link
 
