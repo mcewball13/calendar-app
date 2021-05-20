@@ -1,6 +1,7 @@
 var tasks = {};
 var loadDateTime = setInterval(() => {
     $("#currentDay").text(moment().format("dddd, MMMM Do h:mm:ss a"));
+    auditTasks();
 }, 1000);
 
 // get current hour from moment in military time hour only
@@ -21,10 +22,6 @@ var auditTasks = function () {
 };
 // initial call for coloring on page load
 auditTasks();
-// check every 5 minutes is colors are correct
-setInterval(() => {
-    auditTasks();
-}, 300000);
 
 // appply the text to the DOM 
 var createTask = (timeBlock, taskText) => {
