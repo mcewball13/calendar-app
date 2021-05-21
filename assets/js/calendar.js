@@ -95,7 +95,6 @@ $(".container").on("click", ".saveBtn", function () {
 
     // get text content of form
     var taskText = $(`[data-time-block="${dataId}"] .description`).val();
-    createTask(dataId, taskText);
 
     // recreate span element
     var descriptionEl = $("<span>").addClass("col-8 col-sm-9 description");
